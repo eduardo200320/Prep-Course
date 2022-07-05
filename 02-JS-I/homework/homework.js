@@ -132,21 +132,22 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código: 
-  if (num%2){
-    return num
-  }
+ var num = num ** 2 
+ return num
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+  var num = num ** 3 
+  return num
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  var elevar = num ** exponent 
+  return elevar 
 }
 
 function redondearNumero(num) {
