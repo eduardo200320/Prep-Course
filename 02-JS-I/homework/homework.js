@@ -101,13 +101,18 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  
+  return x % y ;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
-  // Tu código:
+  // Tu código: 
+   if (num %2 === 0 ) { 
+    return true
+   } else {
+    return false
+   }
   
 }
 
@@ -115,14 +120,21 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num %2 > 0) {
+    return true
+  } else {
+    return false
+  }
   
 }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
-  // Tu código:
-  
+  // Tu código: 
+  if (num%2){
+    return num
+  }
 }
 
 function elevarAlCubo(num) {
@@ -172,21 +184,22 @@ function agregarSimboloExclamacion(str) {
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
-  // Tu código:
-  
+  // Tu código
+var  combinados = nombre + " " + apellido ;
+return combinados ;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
-  // Tu código:
-  
+  // Tu código: 
+return "Hola " + nombre + "!" ;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  
+  return  alto * ancho
 }
 
 
