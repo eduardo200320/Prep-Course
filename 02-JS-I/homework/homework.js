@@ -165,7 +165,7 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  return Math.random()
 }
 
 function esPositivo(numero) {
@@ -173,7 +173,13 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+  if (numero>0) {
+    return "Es positivo"
+  } else if (numero<0) {
+    return "Es negativo"
+  } else {
+    return false
+  }
 }
 
 function agregarSimboloExclamacion(str) {
@@ -209,13 +215,14 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  return lado * 4
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
+  return base * altura * 3 ;
 
 }
 
